@@ -343,7 +343,7 @@
     entity.treasure = obj.type == "treasure";
     entity.left     = obj.properties.left;
     entity.right    = obj.properties.right;
-    entity.start    = { x: obj.x, y: obj.y }
+    entity.start    = { x: obj.x, y: obj.y };
     entity.killed = entity.collected = 0;
     return entity;
   }
