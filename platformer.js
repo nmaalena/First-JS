@@ -51,7 +51,7 @@
       TILE     = 32,
       METER    = TILE,
       GRAVITY  = 9.8 * 6, // default (exagerated) gravity
-      MAXDX    = 15,      // default max horizontal speed (15 tiles per second)
+      MAXDX    = 5,      // default max horizontal speed (15 tiles per second)
       MAXDY    = 60,      // default max vertical speed   (60 tiles per second)
       ACCEL    = 1/2,     // default take 1/2 second to reach maxdx (horizontal acceleration)
       FRICTION = 1/6,     // default take 1/6 second to stop from maxdx (horizontal friction)
