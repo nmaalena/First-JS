@@ -129,11 +129,12 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-    if (life > 1)
+    if (life > 1) {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>YOU HAVE DIED</h2></font></center>";
-      //COLOR    = { BLACK: '#000000', YELLOW: '#000000', BRICK: '#000000', PINK: '#000000', PURPLE: '#000000', GREY: '#000000', SLATE: '#000000', GOLD: '#000000'};
+      COLOR    = { BLACK: '#000000', YELLOW: '#000000', BRICK: '#000000', PINK: '#000000', PURPLE: '#000000', GREY: '#000000', SLATE: '#000000', GOLD: '#000000'};
+    }
   }
 
   function collectTreasure(t) {
