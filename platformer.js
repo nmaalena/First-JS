@@ -61,7 +61,8 @@
       KEY      = { SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 };
       
   var fps      = 60,
-      life     = 3,
+      life     = 4,
+      dead     = false,
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
@@ -128,6 +129,7 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
+    dead = true
     document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
   }
 
@@ -364,6 +366,8 @@
     counter++;
     fpsmeter.tick();
     requestAnimationFrame(frame, canvas);
+    if (dead)
+      COLOR    = { BLACK: '#000000', YELLOW: '#000000', BRICK: '#000000', PINK: '#000000', PURPLE: '#000000', GREY: '#000', SLATE: '#000000', GOLD: '#000000' };
   }
   
   document.addEventListener('keydown', function(ev) { return onkey(ev, ev.keyCode, true);  }, false);
