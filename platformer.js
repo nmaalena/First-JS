@@ -60,7 +60,7 @@
       COLORS   = [ COLOR.YELLOW, COLOR.BRICK, COLOR.PINK, COLOR.PURPLE, COLOR.GREY ],
       KEY      = { SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 };
       
-  var fps      = 160,
+  var fps      = 60,
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
@@ -125,7 +125,7 @@
 
   function killMonster(monster) {
     player.killed++;
-    window.alert(player.killed)
+    console.log(player.killed)
     monster.dead = true;
   }
 
