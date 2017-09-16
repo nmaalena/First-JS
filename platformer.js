@@ -62,7 +62,10 @@
       
   var fps      = 60,
       life     = 3,
+<<<<<<< HEAD
       dead     = false,
+=======
+>>>>>>> parent of fe5743a... test999
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
@@ -130,6 +133,7 @@
     player.y = player.start.y;
     player.dx = player.dy = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (life > 1)
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
@@ -142,6 +146,9 @@
 =======
     document.getElementById("barbarybread").innerHTML = "Lives remaining:" + --life;
 >>>>>>> parent of 6df7615... JS controls html
+=======
+    document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
+>>>>>>> parent of fe5743a... test999
   }
 
   function collectTreasure(t) {
