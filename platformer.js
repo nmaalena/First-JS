@@ -129,6 +129,7 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
+<<<<<<< HEAD
     if (life > 1)
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
@@ -138,6 +139,9 @@
 =======
       //COLOR    = { BLACK: '#000000', YELLOW: '#000000', BRICK: '#000000', PINK: '#000000', PURPLE: '#000000', GREY: '#000000', SLATE: '#000000', GOLD: '#000000'};
 >>>>>>> parent of 54406cd... Forgot a block
+=======
+    document.getElementById("barbarybread").innerHTML = "Lives remaining:" + --life;
+>>>>>>> parent of 6df7615... JS controls html
   }
 
   function collectTreasure(t) {
