@@ -55,7 +55,7 @@
       MAXDY    = 120,      // default max vertical speed   (60 tiles per second)
       ACCEL    = 1/2,     // default take 1/2 second to reach maxdx (horizontal acceleration)
       FRICTION = 1/6,     // default take 1/6 second to stop from maxdx (horizontal friction)
-      IMPULSE  = 3000,    // default player jump impulse
+      IMPULSE  = 1500,    // default player jump impulse
       COLOR    = { BLACK: '#000000', YELLOW: '#ECD078', BRICK: '#D95B43', PINK: '#C02942', PURPLE: '#542437', GREY: '#333', SLATE: '#53777A', GOLD: 'gold' },
       COLORS   = [ COLOR.YELLOW, COLOR.BRICK, COLOR.PINK, COLOR.PURPLE, COLOR.GREY ],
       KEY      = { SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 };
