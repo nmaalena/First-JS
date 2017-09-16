@@ -133,6 +133,7 @@
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>YOU HAVE DIED</h2></font></center>";
+      COLOR    = { BLACK: '#000000', YELLOW: BLACK, BRICK: BLACK, PINK: BLACK, PURPLE: BLACK, GREY: BLACK, SLATE: BLACK, GOLD: BLACK},
   }
 
   function collectTreasure(t) {
