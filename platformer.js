@@ -124,16 +124,11 @@
     }
   }
 
-  function killMonster(monster) {
-    player.killed++;
-    window.alert(player.killed);
-    monster.dead = true;
-  }
-
   function killPlayer(player) {
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
+    window.alert("Lifes left: ".concat(life--));
   }
 
   function collectTreasure(t) {
