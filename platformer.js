@@ -61,6 +61,7 @@
       KEY      = { SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 };
       
   var fps      = 60,
+      life     = 3,
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
@@ -125,6 +126,7 @@
 
   function killMonster(monster) {
     player.killed++;
+    window.alert(player.killed);
     monster.dead = true;
   }
 
