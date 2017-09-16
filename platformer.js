@@ -51,16 +51,16 @@
       TILE     = 32,
       METER    = TILE,
       GRAVITY  = 9.8 * 6, // default (exagerated) gravity
-      MAXDX    = 15,      // default max horizontal speed (15 tiles per second)
-      MAXDY    = 60,      // default max vertical speed   (60 tiles per second)
+      MAXDX    = 35,      // default max horizontal speed (15 tiles per second)
+      MAXDY    = 120,      // default max vertical speed   (60 tiles per second)
       ACCEL    = 1/2,     // default take 1/2 second to reach maxdx (horizontal acceleration)
       FRICTION = 1/6,     // default take 1/6 second to stop from maxdx (horizontal friction)
-      IMPULSE  = 300,    // default player jump impulse
+      IMPULSE  = 3000,    // default player jump impulse
       COLOR    = { BLACK: '#000000', YELLOW: '#ECD078', BRICK: '#D95B43', PINK: '#C02942', PURPLE: '#542437', GREY: '#333', SLATE: '#53777A', GOLD: 'gold' },
       COLORS   = [ COLOR.YELLOW, COLOR.BRICK, COLOR.PINK, COLOR.PURPLE, COLOR.GREY ],
       KEY      = { SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 };
       
-  var fps      = 60,
+  var fps      = 160,
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
