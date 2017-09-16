@@ -129,8 +129,9 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-    dead = true
     document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
+    if (life < 1)
+      dead = true;
   }
 
   function collectTreasure(t) {
