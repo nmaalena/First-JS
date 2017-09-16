@@ -362,6 +362,7 @@
     now = timestamp();
     dt = dt + Math.min(1, (now - last) / 1000);
     while(dt > step) {
+      document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>" + now + "</h2></font></center>";
       dt = dt - step;
       update(step);
     }
@@ -370,7 +371,6 @@
     counter++;
     fpsmeter.tick();
     requestAnimationFrame(frame, canvas);
-    document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>" + now + "</h2></font></center>";
   }
   
   document.addEventListener('keydown', function(ev) { return onkey(ev, ev.keyCode, true);  }, false);
