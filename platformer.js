@@ -128,11 +128,7 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-    window.alert = null;
-    alert('test'); // fail
-    delete window.alert; // true
-    alert('test'); // win
-    alert("Lives left: " + life--);
+    document.getElementById("barbarybread").innerHTML = "Lives remaining:" + --life;
   }
 
   function collectTreasure(t) {
