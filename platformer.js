@@ -134,7 +134,8 @@
     }
     else {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: You have died.</h2></font></center>";
-      fps = 1;
+      document.removeEventListener('keydown', function(ev) { return onkey(ev, ev.keyCode, true);  }, false);
+      document.removeEventListener('keyup', function(ev) { return onkey(ev, ev.keyCode, false);  }, false);
     }
   }
 
@@ -372,7 +373,7 @@
     fpsmeter.tick();
     requestAnimationFrame(frame, canvas);
   }
-  
+
   document.addEventListener('keydown', function(ev) { return onkey(ev, ev.keyCode, true);  }, false);
   document.addEventListener('keyup',   function(ev) { return onkey(ev, ev.keyCode, false); }, false);
 
