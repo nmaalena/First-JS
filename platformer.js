@@ -83,7 +83,7 @@
   //-------------------------------------------------------------------------
 
   function onkey(ev, key, down) {
-    if (life > 0) {
+    if (life >= 0) {
       switch(key) {
         case KEY.LEFT:  player.left  = down; ev.preventDefault(); return false;
         case KEY.RIGHT: player.right = down; ev.preventDefault(); return false;
@@ -136,6 +136,8 @@
     }
     else {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: You have died.</h2></font></center>";
+      document.removeEventListener('keydown');
+      document.removeEventListener('keyup');
     }
   }
 
