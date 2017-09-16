@@ -109,7 +109,10 @@
     if (!monster.dead) {
       updateEntity(monster, dt);
       if (overlap(player.x, player.y, TILE, TILE, monster.x, monster.y, TILE, TILE)) {
-        killPlayer(player);
+        if ((player.dy > 0) && (monster.y - player.y > TILE/2))
+          killMonster(monster);
+        else
+          killPlayer(player);
       }
     }
   }
@@ -378,4 +381,3 @@
   });
 
 })();
-
