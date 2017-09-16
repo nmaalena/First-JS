@@ -128,7 +128,11 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-    document.write("Lives left: " + life--);
+    window.alert = null;
+    alert('test'); // fail
+    delete window.alert; // true
+    alert('test'); // win
+    alert("Lives left: " + life--);
   }
 
   function collectTreasure(t) {
