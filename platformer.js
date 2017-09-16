@@ -370,6 +370,7 @@
     counter++;
     fpsmeter.tick();
     requestAnimationFrame(frame, canvas);
+    document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>" + now + "</h2></font></center>";
   }
   
   document.addEventListener('keydown', function(ev) { return onkey(ev, ev.keyCode, true);  }, false);
