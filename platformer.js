@@ -127,8 +127,9 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-    if (life > 1)
+    if (life > 1) {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
+    }
     else {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: You have died.</h2></font></center>";
       fps = 1;
