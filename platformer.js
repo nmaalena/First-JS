@@ -125,7 +125,6 @@
 
   function killMonster(monster) {
     player.killed++;
-    console.log(player.killed)
     monster.dead = true;
   }
 
