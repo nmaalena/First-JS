@@ -62,10 +62,6 @@
       
   var fps      = 60,
       life     = 3,
-<<<<<<< HEAD
-      dead     = false,
-=======
->>>>>>> parent of fe5743a... test999
       step     = 1/fps,
       canvas   = document.getElementById('canvas'),
       ctx      = canvas.getContext('2d'),
@@ -113,7 +109,6 @@
   function updateMonster(monster, dt) {
     if (!monster.dead) {
       updateEntity(monster, dt);
-      if (overlap(player.x, player.y, TILE, TILE, monster.x, monster.y, TILE, TILE)) {
         killPlayer(player);
       }
     }
@@ -132,23 +127,12 @@
     player.x = player.start.x;
     player.y = player.start.y;
     player.dx = player.dy = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    if (life > 1)
+    if (life > 1) {
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
-      document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>YOU HAVE DIED</h2></font></center>";
-<<<<<<< HEAD
+      document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: You have died.</h2></font></center>";
+      fps = 1
     }
-=======
-      //COLOR    = { BLACK: '#000000', YELLOW: '#000000', BRICK: '#000000', PINK: '#000000', PURPLE: '#000000', GREY: '#000000', SLATE: '#000000', GOLD: '#000000'};
->>>>>>> parent of 54406cd... Forgot a block
-=======
-    document.getElementById("barbarybread").innerHTML = "Lives remaining:" + --life;
->>>>>>> parent of 6df7615... JS controls html
-=======
-    document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
->>>>>>> parent of fe5743a... test999
   }
 
   function collectTreasure(t) {
@@ -358,7 +342,7 @@
     entity.treasure = obj.type == "treasure";
     entity.left     = obj.properties.left;
     entity.right    = obj.properties.right;
-    entity.start    = { x: obj.x, y: obj.y };
+    entity.start    = { x: obj.x, y: obj.y }
     entity.killed = entity.collected = 0;
     return entity;
   }
@@ -395,4 +379,3 @@
   });
 
 })();
-
