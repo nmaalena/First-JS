@@ -132,7 +132,7 @@
     if (life > 0)
       document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>Lives remaining: " + --life + "</h2></font></center>";
     else
-      document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>YOU HAVE DIED"</h2></font></center>";
+      document.getElementById("barbarybread").innerHTML = "<center><font color='white'><h2>YOU HAVE DIED</h2></font></center>";
   }
 
   function collectTreasure(t) {
