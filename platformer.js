@@ -109,9 +109,11 @@
   function updateMonster(monster, dt) {
     if (!monster.dead) {
       updateEntity(monster, dt);
+      if (overlap(player.x, player.y, TILE, TILE, monster.x, monster.y, TILE, TILE)) {
         killPlayer(player);
       }
     }
+  }
   
 
   function checkTreasure() {
